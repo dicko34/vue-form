@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  src: url("fonts/Ubuntu-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  src: url("fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  src: url("fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  src: url("fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+.dp-flex {
+  display: flex;
+}
+
+.flex-ailgn-center {
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-bet {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.flex-colmun {
+  flex-direction: column;
+}
+
+.flex-colmun-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+body {
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body #c-contact-form {
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid rgba(233, 233, 233, 0.9137254902);
+  border-radius: 5px;
+}
+body #c-contact-form #c-contact-form-side-section {
+  padding: 20px;
+  flex-basis: 90%;
+  color: #fff;
+  background-color: #3c59ff;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-title .side-section-title {
+  font-size: 19px;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-title .side-section-subtitle {
+  font-size: 15px;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-our-info {
+  flex-basis: 100%;
+  list-style: none;
+  padding: 5px;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-our-info .side-section-info .round {
+  border-radius: 50%;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-our-info .side-section-info .square {
+  border-radius: 5px;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-our-info .side-section-info .side-section-info-container-icon {
+  margin: 10px;
+  min-width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  border: 1px solid #242338;
+  border-color: rgb(68, 68, 68);
+  margin-right: 10px;
+  text-align: center;
+  text-align: -webkit-center;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-our-info .side-section-info .side-section-info-container-icon img {
+  width: 20px;
+  height: 20px;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-our-info .side-section-info .side-section-container-text {
+  font-size: 13px;
+  margin-right: 5px;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-ilnks {
+  padding: 20px 0;
+}
+body #c-contact-form #c-contact-form-side-section .side-section-ilnks .side-section-link img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+body #c-contact-form #c-contact-form-main-section {
+  position: relative;
+  padding: 30px;
+  flex-basis: 100%;
+  background-color: #fff;
+  color: #292929;
+}
+body #c-contact-form #c-contact-form-main-section .window {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background-color: #fff;
+  opacity: 0.7;
+}
+body #c-contact-form #c-contact-form-main-section .window img {
+  width: 200px;
+}
+body #c-contact-form #c-contact-form-main-section .main-section-title {
+  font-size: 19px;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form {
+  padding: 10px;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form .field-container {
+  margin: 5px 0;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form .field-container .field {
+  flex-basis: 100%;
+  margin: 0 10px;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form .field-container .field label {
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 3px 0;
+  display: block;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form .field-container .field input {
+  color: #bbb;
+  width: 100%;
+  height: 42px;
+  display: block;
+  border: 0;
+  padding: 5px 10px;
+  border-bottom: 1px solid #f3f3f3;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form .field-container .field input:focus {
+  outline: 0;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form .field-container .field textarea {
+  padding: 20px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #f3f3f3;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form .field-container .field .required {
+  padding: 10px;
+  background-color: #f8d7d7;
+  color: #b54343;
+  display: block;
+  margin: 10px 0;
+  font-size: 12px;
+  border-radius: 2px;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form #main-section-container-button {
+  width: 100%;
+}
+body #c-contact-form #c-contact-form-main-section #mian-section-form #main-section-container-button button#main-section-button {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 13px;
+  border: 0;
+  background-color: #3c59ff;
+  color: #fff;
+}
+
+@media (max-width: 540px) {
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .side-section-info {
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=main.css.map */
